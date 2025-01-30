@@ -9,23 +9,29 @@ body {
 }
 
 /* <!-- Header Setion --> */
-.main {
-    display: flex;
+/* .main,.logo {
+
     flex-direction: column;
+    display: flex;
     flex-wrap: wrap;
 
-
+ */
+.main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 5%;
+    padding: 20px;
 }
 
+
 .logo {
+    background-image: url(./Assets/logo\ 2.png.webp);
+    background-repeat: no-repeat;
     display: inline-block;
-    background-size: auto;
-    display: block;
-    text-align: start;
-    padding: 16px;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 36px;
+    padding: 10px;
+    width: 25%;
+    background-color: white;
 }
 
 #first {
@@ -57,23 +63,13 @@ ul {
     color: #212529;
     text-align: left;
     background-color: #fff;
+
 }
 
 .header_list :hover {
     background-color: lightgreen;
 }
 
-
-.left {
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-    gap: 10px 20px;
-    row-gap: 10px;
-    column-gap: 20px;
-}
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (min-width: 576px) and (max-width: 767px),
@@ -155,7 +151,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .column {
     flex: 25%;
-    max-width: 25%;
+    max-width: 250%;
     padding: 0 4px;
 }
 
@@ -188,9 +184,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
     padding: 25px 40px 15px;
     background: #222222;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    height: 5%;
+    padding: 20px;
 }
 
 .text {
@@ -238,7 +235,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
     transition: all 0.3s ease;
     color: white;
     font-size: 36px;
-    
+
 }
 
 
